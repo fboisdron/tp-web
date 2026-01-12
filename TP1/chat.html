@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+</head>
+<body>
+    <header>
+        <h1>Chat en ligne</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="authentification.html">Chat</a></li>
+                <li><a href="https://isen-ouest.fr/" target="_blank"><img src="images/logo-isen.png" alt="Logo ISEN" width="150"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Chat</h2>
+
+        <form method="post">
+            <p>
+                <label for="canaux">Canaux: </label>
+                <select id="canaux" name="canaux">
+                    <option value="">--Choisissez un canal--</option>
+                    <option value="general">Général</option>
+                    <option value="technique">Technique</option>
+                    <option value="detente">Détente</option>
+                </select>
+                <label for="rafraichissement">Rafraîchissement : </label>
+                <input type="text" id="rafraichissement" name="rafraichissement" placeholder="Entrez le délai de rafraîchis">
+                <span>secondes</span>
+            </p>
+            <hr>
+            <p>
+                <textarea cols="100" rows="10" readonly></textarea>
+            </p>
+            <hr>
+            <p>
+                <label for="message">Message &gt; : </label>
+                <input type="text" id="message" name="message" placeholder="Entrez votre message" required>
+            </p>
+            <p>
+                <input type="button" value="Se déconnecter" onclick="window.location.href='authentification.html'">
+                <input type="submit" value="Envoyer">
+            </p>
+        </form>
+    </section>
+
+    <footer>
+        <p>All content copyright &copy; CIPA4.</p>
+        <p><a href="https://isen-ouest.fr/" target="_blank">Lien vers la page du Programmeur</a></p>
+    </footer>
+</body>
+</html>

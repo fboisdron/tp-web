@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Chat en ligne</h1>
+        <nav>
+            <ul>
+                <li class="logo-item"><a href="https://isen-ouest.fr/" target="_blank"><img src="images/logo-isen.png" alt="Logo ISEN"></a></li>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li class="active-chat"><a href="authentification.html">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="chat-content">
+        <h2>Chat</h2>
+
+        <form method="post" class="chat-form">
+            <div class="canaux-row">
+                <label for="canaux">Canaux : </label>
+                <select id="canaux" name="canaux">
+                    <option value="">Choisissez un salon</option>
+                    <option value="general">Général</option>
+                    <option value="technique">Technique</option>
+                    <option value="detente">Détente</option>
+                </select>
+            </div>
+
+            <div class="rafraichissement-row">
+                <label for="rafraichissement">Rafraîchissement : </label>
+                <input type="text" id="rafraichissement" name="rafraichissement" placeholder="Délai de rafraîchissement">
+                <span>secondes</span>
+            </div>
+
+            <div class="textarea-row">
+                <textarea cols="80" rows="10" readonly></textarea>
+            </div>
+
+            <div class="message-row">
+                <label for="message">Message &gt;</label>
+                <input type="text" id="message" name="message" placeholder="Entrez votre message" required>
+            </div>
+
+            <div class="buttons-chat-row">
+                <input type="submit" value="Envoyer">
+                <input type="button" value="Se déconnecter" onclick="window.location.href='authentification.html'">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>All content copyright &copy; CIPA4.</p>
+        <p><a href="https://isen-ouest.fr/" target="_blank">Lien vers la page du Programmeur</a></p>
+    </footer>
+</body>
+</html>

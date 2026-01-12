@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Chat en ligne</h1>
+        <nav>
+            <ul>
+                <li class="logo-item"><a href="https://isen-ouest.fr/" target="_blank"><img src="images/logo-isen.png" alt="Logo ISEN"></a></li>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li class="active-chat"><a href="authentification.html">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="auth-content">
+        <h2>Authentification</h2>
+
+        <form method="get" action="chat.html" class="auth-form">
+            <label for="login">Login : </label>
+            <input type="text" id="login" name="login" placeholder="Entrez votre login" required>
+
+            <label for="password">Mot de passe : </label>
+            <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+
+            <div class="buttons-row">
+                <input type="submit" value="Se connecter">
+                <input type="reset" value="Effacer">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Rester connecté</label>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>All content copyright &copy; CIPA4.</p>
+        <p><a href="https://isen-ouest.fr/" target="_blank">Lien vers la page du Programmeur</a></p>
+    </footer>
+</body>
+</html>
