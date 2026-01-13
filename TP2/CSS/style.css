@@ -43,6 +43,10 @@ header img {
     height: 50px;
 }
 
+nav {
+    background-color: #783F27;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -207,4 +211,8 @@ nav li.active-chat {
 
 nav li.active-chat a {
     color: #783F27;
+}
+
+a:link, a:visited {
+    color: orange;
 }
